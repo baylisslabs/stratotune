@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6D8B5EF-710E-4869-9E53-B12BD69FDDDC}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <MonoDevelop.Autotools.MakefileInfo IntegrationEnabled="true" RelativeMakefileName="Makefile">
+          <BuildFilesVar Name="SOURCES" />
+          <DeployFilesVar />
+          <ResourcesVar />
+          <OthersVar />
+          <GacRefVar />
+          <AsmRefVar />
+          <ProjectRefVar />
+        </MonoDevelop.Autotools.MakefileInfo>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <None Include="cat.svg" />
+    <None Include="panel_cutouts.svg" />
+    <None Include="shine.svg" />
+    <None Include="panel_texture.svg" />
+    <None Include="panel_with_cutouts.svg" />
+    <None Include="Makefile" />
+    <None Include="panel_with_buttons.svg" />
+    <None Include="cents_dial.py" />
+    <None Include="scale_tape.py" />
+    <None Include="music_notation_type.py" />
+    <None Include="scale_tape_english_flat.py" />
+    <None Include="scale_tape_english_sharp.py" />
+    <None Include="scale_tape_northerneuropean.py" />
+    <None Include="scale_tape_solfege_fixeddo.py" />
+    <None Include="scale_tape_english.py" />
+    <None Include="mode_switch_slider.svg" />
+    <None Include="notelock_slider.svg" />
+    <None Include="radial_brushed_metal.py" />
+    <None Include="radial_spoked_shine.svg" />
+    <None Include="mode_switch_slider_knob.svg" />
+    <None Include="notelock_slider_knob.svg" />
+    <None Include="51-power-glow.svg" />
+    <None Include="51-power.svg" />
+    <None Include="120-headphones.svg" />
+    <None Include="120-headphones-glow.svg" />
+    <None Include="cents_dial_tint.svg" />
+    <None Include="scale_tape_tint.svg" />
+    <None Include="panel_for_view.svg" />
+    <None Include="icon_texture.svg" />
+    <None Include="icon_cutouts.svg" />
+    <None Include="icon_with_cutouts.svg" />
+    <None Include="appstore_icon.svg" />
+    <None Include="icon_cutout_tint.svg" />
+    <None Include="icon_scale_tape.py" />
+    <None Include="icon_cents_dial.py" />
+    <None Include="app_icon.svg" />
+    <None Include="app_icon_ipad.svg" />
+    <None Include="spotlight_icon_ipad.svg" />
+    <None Include="spotlight_icon.svg" />
+    <None Include="Default.svg" />
+    <None Include="itunes_screen_shot_1.svg" />
+    <None Include="iPhone-4S-0.svg" />
+    <None Include="itunes_screen_shot_2.svg" />
+    <None Include="Default-568h.svg" />
+    <None Include="itunes_screen_shot_1_rgba.svg" />
+    <None Include="panel_with_cutouts_568h.svg" />
+    <None Include="panel_cutouts_568h.svg" />
+    <None Include="panel_for_view_568h.svg" />
+    <None Include="panel_with_buttons_568h.svg" />
+    <None Include="iPhone-5.svg" />
+    <None Include="itunes_screen_shot_1_568h.svg" />
+    <None Include="itunes_screen_shot_1_rgba_568h.svg" />
+    <None Include="itunes_screen_shot_2_568h.svg" />
+  </ItemGroup>
+</Project>

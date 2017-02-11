@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"      
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="512" height="512">
+           
+    <rect width="100%" height="100%" style="fill:#62daff"/>
+            
+    <image x="26" y="40" width="460" height="200"  xlink:href="generated/icon_cents_dial.png"/>     
+    <image x="26" y="272" width="460" height="200" xlink:href="generated/icon_scale_tape.png"/>  
+    
+    <image x="26" y="40" width="460" height="200"  xlink:href="generated/icon_cutout_tint.png"/> 
+    <image x="26" y="272" width="460" height="200" xlink:href="generated/icon_cutout_tint.png"/> 
+   
+    <image width="100%" height="100%" xlink:href="generated/icon_with_cutouts.png"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!-- This generates a preview of the front panel, and also specifies some of the button icon locations -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"   
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"   
+     width="320" height="548">
+    
+    <rect width="100%" height="100%" style="fill:#888888"/>
+    <image x="10" y="60" width="300" height="140" xlink:href="generated/cents_dial.png"/>   
+    <image x="10" y="250" width="14400" height="75" transform="translate(-5850,0)" xlink:href="generated/scale_tape_english.png"/>  
+    <image x="135" y="358" width="110" height="40" transform="translate(0,-10)" xlink:href="generated/notelock_slider.png"/>            
+    <image x="55" y="450" width="420" height="52" transform="translate(0,-13)" xlink:href="generated/mode_switch_slider.png"/>    
+ 
+    <line x1="160" y1="250" x2="160" y2="325" style="stroke:#ff2222; stroke-width:1"/>
+    
+    <image width="100%" height="100%" xlink:href="generated/panel_for_view_568h.png"/>
+    
+    <image id="power_btn_568h" x="3" y="8" width="40" height="40" xlink:href="generated/51-power.png"/>
+    <image id="headphone_btn_568h" x="47" y="8" width="40" height="40" xlink:href="generated/120-headphones.png"/>
+    <image id="settings_btn_568h" x="284" y="15" width="26" height="26" xlink:href="../../third_party/GlyphishPro/icons/icons-gray/19-gear.png"/>
+ 
+</svg>

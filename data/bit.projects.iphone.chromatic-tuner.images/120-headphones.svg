@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"  
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"    
+     width="40" height="40">
+              
+    <image x="50%" y="50%" 
+        width="26" height="26"
+        transform="translate(-13,-13)"         
+        xlink:href="../../third_party/GlyphishPro/icons/icons-gray/120-headphones.png"/>
+    
+</svg>

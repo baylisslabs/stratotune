@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="40" height="40">
+       
+    <image x="50%" y="50%" 
+        width="28" height="29"
+        transform="translate(-14,-14.5)"         
+        xlink:href="../../third_party/GlyphishPro/xtras/xtras-gray/51-power.png"/>
+    
+</svg>

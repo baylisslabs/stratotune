@@ -1,0 +1,8 @@
+[ui]
+username = Chris Bayliss <chris@bayliss-it.com.au>
+[alias]
+mlist = !ssh hg@hurricane find . -name '.hg' -a -type d -prune | sed 's/\/\.hg$//' | sed 's/^\.\///'
+list = !find . -name '.hg' -a -type d -prune | sed 's/\/\.hg$//' | sed 's/^\.\///'
+mclone = clone ssh://hg@hurricane/$1 $1
+commitnc = commit -m "no comment"
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FE0C905-1DF4-4463-9BBB-1FE3FCCAEA3C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>bit.shared.audio.FuncTests</RootNamespace>
+    <AssemblyName>bit.shared.audio.FuncTests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Jayrock">
+      <HintPath>..\..\..\third_party\jayrock\jayrock-0.9.12915\bin\mono\debug\Jayrock.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\bit.shared.audio.csproj">
+      <Project>{2380E60D-E76D-462B-BA45-02C327E3B204}</Project>
+      <Name>bit.shared.audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.testutil\bit.shared.testutil.csproj">
+      <Project>{7A6F67D6-8142-4E59-B90D-8A8DF8907304}</Project>
+      <Name>bit.shared.testutil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test1.py" />
+    <None Include="proxy.py" />
+    <None Include="test2.py" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"      
+     width="40" height="40">
+       
+    <im:convert>
+        ( +clone -alpha extract )
+        (
+            +clone -channel G -fx '1-0.10*cos(4*pi*(j/h-.5))' -separate -blur 0x4
+            ( +clone -fill #06c9ff -colorize 100% )
+            -compose Multiply -flatten
+        )
+        -delete 0 -swap 0,1 -alpha Off -compose CopyOpacity -composite
+        ( +clone -channel RGBA -blur 0x5 -modulate 100 ) 
+        -swap 0,1 -compose Over -composite    
+    </im:convert>
+       
+    <image x="50%" y="50%" 
+        width="28" height="29"
+        transform="translate(-14,-14.5)"         
+        xlink:href="../../third_party/GlyphishPro/xtras/xtras-gray/51-power.png"/>
+    
+</svg>

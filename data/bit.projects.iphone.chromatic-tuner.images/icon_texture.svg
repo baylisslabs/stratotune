@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc" 
+     width="512" height="512">
+    
+    <im:convert>
+        ( +clone +noise random -colorspace Gray +level-colors gray(50%),white )
+        -compose multiply -flatten -virtual-pixel horizontal-tile -motion-blur 0x25+0      
+    </im:convert>
+       
+    <rect x="0" y="0" width="100%" height="100%" style="stroke: #ffff33; fill: #ffff33;"/>
+</svg>
+

@@ -1,0 +1,55 @@
+
+
+# Build identification
+BUILDS_ROOT=$(HOME)/builds
+BUILD_ID=bit.projects.iphone.chromatic-tuner
+BUILD_NO=$(BUILD_NUMBER)
+BUILD_TYPE=dev
+BUILD_VERSION=1.0
+
+# Build source
+REPOSITORY_URL=ssh://hg@hurricane/
+REPOSITORY_ROOT=src/bit.projects.iphone.chromatic-tuner
+# Todo switch to pulling deps from pre-build packages
+REPOSITORY_PREREQS=\
+data/bit.projects.iphone.chromatic-tuner.images \
+src/bit.shared.appconfig \
+src/bit.shared.audio \
+src/bit.shared.ios.audio \
+src/bit.shared.ios.msgbus \
+src/bit.shared.logging \
+src/bit.shared.numerics \
+third_party/GlyphishPro \
+third_party/sqlite-net 
+
+MD_SOLUTION=bit.projects.iphone.chromatic-tuner.sln
+MD_CONFIG=Debug|iPhoneSimulator
+
+# Calculated vars
+BUILD_PATH=$(BUILDS_ROOT)/$(BUILD_TYPE)/$(BUILD_ID)/$(BUILD_NO)
+ALL_REPOS=$(REPOSITORY_ROOT) $(REPOSITORY_PREREQS)
+ALL_REPOS_HG=$(ALL_REPOS:%=$(BUILD_PATH)/%/.hg)
+MD_PHONY_TARGETS=$(BUILD_PATH)/$(REPOSITORY_ROOT)/$(MD_SOLUTION)
+TARGETS=$(MD_PHONY_TARGETS)
+
+# Tool paths / config
+MD_TOOL=/Applications/MonoDevelop.app/Contents/MacOS/mdtool 
+HG_CLONE=/usr/local/bin/hg clone
+
+all : $(BUILD_PATH) $(ALL_REPOS_HG) $(TARGETS)
+
+remote:
+	ssh -l chris minimac "bin/make -f hg/scripts/Makefile.Build all BUILD_NUMBER=${BUILD_NUMBER}" 
+
+$(BUILD_PATH):
+	mkdir -p $(BUILD_PATH)
+
+$(BUILD_PATH)/%/.hg :
+	cd $(BUILD_PATH) && $(HG_CLONE) $(REPOSITORY_URL)$* $*
+
+%.sln : FORCE
+	cd $(@D) && $(MD_TOOL) build "--configuration:$(MD_CONFIG)" -target:Clean 
+	cd $(@D) && $(MD_TOOL) build "--configuration:$(MD_CONFIG)" -target:Build 
+
+FORCE :
+

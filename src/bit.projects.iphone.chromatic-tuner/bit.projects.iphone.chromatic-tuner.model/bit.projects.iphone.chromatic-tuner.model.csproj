@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7038C5C9-CB57-4F2A-B79F-AF6E5812066E}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>bit.projects.iphone.chromatictuner.model</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>bit.projects.iphone.chromatic-tuner.model</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="FlurryAnalytics">
+      <HintPath>..\packages\monotouch-flurry-analytics.4.3.0.0\lib\MonoTouch\FlurryAnalytics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Services\IUserSettingsService.cs" />
+    <Compile Include="Services\UserSettingsServiceImpl.cs" />
+    <Compile Include="Modules\TunerFilterContext.cs" />
+    <Compile Include="Modules\TunerAudioProcessor.cs" />
+    <Compile Include="DataAccess\SQLiteDataAccess.cs" />
+    <Compile Include="DataAccess\UserSettingsDao.cs" />
+    <Compile Include="DataAccess\UserSettingsDataAccess.cs" />
+    <Compile Include="DataAccess\SystemConfigDao.cs" />
+    <Compile Include="DataAccess\SystemConfigDataAccess.cs" />
+    <Compile Include="Services\FileSystemServiceImpl.cs" />
+    <Compile Include="Services\IFileSystemService.cs" />
+    <Compile Include="Services\UserSettingsServiceCached.cs" />
+    <Compile Include="Entities\Config\DbConfigSection.cs" />
+    <Compile Include="Entities\Config\FileSystemConfigSection.cs" />
+    <Compile Include="Entities\Config\SupportConfigSection.cs" />
+    <Compile Include="Entities\Config\TunerConfigSection.cs" />
+    <Compile Include="Entities\DataModel\UserSettings.cs" />
+    <Compile Include="Entities\DataModel\TranspositionType.cs" />
+    <Compile Include="Entities\DataModel\TemperamentType.cs" />
+    <Compile Include="Entities\DataModel\SystemConfig.cs" />
+    <Compile Include="Entities\DataModel\PitchPipeWaveformType.cs" />
+    <Compile Include="Entities\DataModel\NeedleDampingType.cs" />
+    <Compile Include="Entities\DataModel\MusicNotationType.cs" />
+    <Compile Include="Entities\DataModel\Entity.cs" />
+    <Compile Include="Entities\Messages\TunerMessages.cs" />
+    <Compile Include="Entities\Messages\FlipFlopOp.cs" />
+    <Compile Include="Entities\Messages\CounterOp.cs" />
+    <Compile Include="Modules\AutoPitchPipe.cs" />
+    <Compile Include="Entities\Messages\TunerMode.cs" />
+    <Compile Include="Entities\Config\AnalyticsConfigSection.cs" />
+    <Compile Include="Services\IAnalyticsService.cs" />
+    <Compile Include="Services\AnalyticsServiceImpl.cs" />
+    <Compile Include="Services\IAppFeedbackService.cs" />
+    <Compile Include="Services\AppFeedbackServiceImpl.cs" />
+    <Compile Include="Entities\Config\AppFeedbackConfigSection.cs" />
+    <Compile Include="Entities\DataModel\AppFeedback.cs" />
+    <Compile Include="DataAccess\AppFeedbackDataAccess.cs" />
+    <Compile Include="DataAccess\AppFeedbackDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\bit.shared.appconfig\bit.shared.appconfig-mt.csproj">
+      <Project>{A4802B35-2918-4A99-8B93-08C12B1DB3DC}</Project>
+      <Name>bit.shared.appconfig-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.audio\bit.shared.audio-mt.csproj">
+      <Project>{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}</Project>
+      <Name>bit.shared.audio-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.ios.audio\bit.shared.ios.audio-mt.csproj">
+      <Project>{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}</Project>
+      <Name>bit.shared.ios.audio-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.logging\bit.shared.logging-mt.csproj">
+      <Project>{3F6055D8-8C77-441C-8788-97B9CC912E82}</Project>
+      <Name>bit.shared.logging-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.numerics\bit.shared.numerics-mt.csproj">
+      <Project>{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}</Project>
+      <Name>bit.shared.numerics-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\third_party\sqlite-net\SQLite-mt.csproj">
+      <Project>{4CF3933E-9BD6-41AC-B0C8-FC37843E6F72}</Project>
+      <Name>SQLite-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.ios.msgbus\bit.shared.ios.msgbus-mt.csproj">
+      <Project>{59C250AC-36C4-4093-82A6-29983389B07B}</Project>
+      <Name>bit.shared.ios.msgbus-mt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Services\" />
+    <Folder Include="Modules\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Entities\Config\" />
+    <Folder Include="Entities\DataModel\" />
+    <Folder Include="Entities\Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

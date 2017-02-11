@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events" 
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="512" height="512">
+     
+    <rect x="26" y="40" width="460" height="200" rx="64" ry="64" style="stroke: #444444; fill: #444444;"/>
+    <rect x="26" y="272" width="460" height="200" rx="64" ry="64" style="stroke: #444444; fill: #444444;"/>   
+</svg>

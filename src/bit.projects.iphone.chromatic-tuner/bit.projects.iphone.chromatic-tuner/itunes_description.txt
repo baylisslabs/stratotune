@@ -1,0 +1,37 @@
+Join thousands of musicians from all continents who are using Stratotune to tune their instruments accurately and easily.
+
+NOW UPDATED with better support for tuning Bass Guitar and Double Bass with a new detection range down to a low 27.5Hz (A0). Also allows for lots more dropped guitar tunings.
+
+"The chromatic scale is definitely very helpful. For singers, it is helpful as when I sing a note, the tuner picks up exactly what note I sang. This is very helpful, especially for acapella singing groups."
+
+"Great app! Accurate and easy to use. Nice one for multi instrumentalists! Highly recommended. A+++"
+
+Choose Stratotune because not getting started with the right tuning won't be good for your playing, your instrument or your audience.
+
+Stratotune is also the first tuner app on the market to provide the unique auto-tone 'hands-free' feature to make tuning by ear much easier for the guitar and other multi-string instruments.
+
+Benefits at a glance:
+
+* Adjust your instrument to any desired tuning
+* Reference tone generator for tuning by ear
+* Auto tone 'hands-free' feature plays back a reference tone when a note is played†
+* Note lock feature allows manual or automatic pitch selection in each mode
+
+†Requires earphones
+
+Stratotune is also adaptable to advanced requirements and includes the following features:
+
+* Ability to save and recall multiple profiles
+* Change the A4 pitch reference from the standard concert pitch (440Hz)
+* Set the transposition in order to support transposing instruments
+* Adjust the tone generator waveform
+* Set the letter notation to number of different styles including solfège and Northern European
+* Adjust the responsiveness of the fine tuning meter
+
+
+Specifications:
+
+Instrument Types: Any instrument capable of sustaining a tone in the detection range
+Pitch Detection Range: 27.5Hz(A0) - 3520Hz(A7)
+Tuning system: 12 Tone Equal Temperament
+Tone generator: Sine,Square,Triangular,Sawtooth. Pitch range 16.352Hz(C0) - 8372Hz(C9)

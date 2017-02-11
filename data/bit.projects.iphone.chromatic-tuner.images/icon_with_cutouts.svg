@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"  
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"    
+     width="512" height="512">
+    
+    <im:convert>
+        <!-- mask out panel cutouts -->        
+        ( generated/icon_cutouts.png -alpha extract -negate )
+        
+        -alpha Off -compose CopyOpacity -composite
+        
+        ( +clone -threshold 1 -fill black -colorize 100% -channel RGBA -blur 0x16 -level 0,70% )
+        
+        <!-- -append -->
+        +swap -compose Over -composite
+    </im:convert>
+       
+    <image width="100%" height="100%" xlink:href="generated/icon_texture.png"/>       
+ </svg>

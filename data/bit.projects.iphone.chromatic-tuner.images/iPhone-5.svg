@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"      
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="400" height="710">
+   
+    <im:convert> 
+       -resize 640x1136
+    </im:convert>      
+        
+    <image x="0" y="0" width="494" height="791" 
+        transform="translate(-47,0)"         
+        xlink:href="../../third_party/AppleMarketing/iPhone-5/iPhone_5_Vertical_sRGB_0912.png"/>
+</svg>

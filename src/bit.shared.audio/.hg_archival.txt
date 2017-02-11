@@ -1,0 +1,5 @@
+repo: afbcd9b7df84b41dff4576cc1140db6376fbe8f4
+node: e249e5830f26a8975b9bb0e446a093a0e074a3c6
+branch: default
+latesttag: v1.2
+latesttagdistance: 1

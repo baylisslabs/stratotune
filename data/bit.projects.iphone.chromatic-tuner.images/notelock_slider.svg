@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events" 
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="110" height="40">
+
+    <pattern id="tile" x="0" y="0" width="4" height="100%" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="40" style="stroke-width:3; stroke: #848484; fill: #848484;"/>             
+    </pattern>    
+    
+    <rect id="notelock_slider" x="0" y="0" width="110" height="40" style="stroke: #888888; fill: #888888;"/>      
+    <rect x="0" y="0" width="110" height="40" style="fill: url(#tile);"/>
+    <image x="29" y="9" width="22" height="22" xlink:href="generated/notelock_slider_knob.png"/>    
+</svg>

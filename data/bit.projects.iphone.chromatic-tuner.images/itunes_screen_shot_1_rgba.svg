@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"   
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"   
+     width="320" height="480">
+    
+    <im:convert>     
+        -modulate 60      
+        ( 
+            screen-shot-front.png          
+            -resize 382x572  
+            -repage +130+205!    
+        )      
+        -background none
+        -compose Plus       
+        -flatten                
+    </im:convert>      
+    <image  x="0" y="0" width="320" height="480" xlink:href="generated/iPhone-4S-0.png"/>           
+    
+</svg>

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+MTOUCH_LAUNCH_SIM='tell application "Terminal" to do script "cd hg/src/bit.projects.iphone.chromatic-tuner && /Developer/MonoTouch/usr/bin/mtouch --launchsim bit.projects.iphone.chromatic-tuner.testrunner/bin/iPhoneSimulator/Debug/bitprojectsiphonechromatictunertestrunner.app"'
+
+#/Developer/MonoTouch/usr/bin/mtouch --launchsim bit.projects.iphone.chromatic-tuner.testrunner/bin/iPhoneSimulator/Debug/bitprojectsiphonechromatictunertestrunner.app -argument=-app-arg:-autostart -argument=-app-arg:-autoexit -argument=-connection-mode -argument=none
+
+osascript -e "${MTOUCH_LAUNCH_SIM}"

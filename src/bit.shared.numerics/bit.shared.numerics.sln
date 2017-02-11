@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{C53669F8-DAF4-47A9-9AEC-B55B955EF0A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.numerics", "bit.shared.numerics.csproj", "{309FA9FC-5F61-4649-9DA3-F30D1AA5266D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.numerics-mt", "bit.shared.numerics-mt.csproj", "{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1FEA2E45-F879-4E03-BA22-CC26912B41D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.numerics.FuncTests", "bit.shared.numerics.FuncTests\bit.shared.numerics.FuncTests.csproj", "{C7923965-12A9-46C7-A740-6EE8E7681046}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{C3B7E078-CEE4-4191-B56C-0D698DAFD860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.testutil", "..\bit.shared.testutil\bit.shared.testutil.csproj", "{7A6F67D6-8142-4E59-B90D-8A8DF8907304}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{309FA9FC-5F61-4649-9DA3-F30D1AA5266D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309FA9FC-5F61-4649-9DA3-F30D1AA5266D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309FA9FC-5F61-4649-9DA3-F30D1AA5266D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309FA9FC-5F61-4649-9DA3-F30D1AA5266D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6F67D6-8142-4E59-B90D-8A8DF8907304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6F67D6-8142-4E59-B90D-8A8DF8907304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6F67D6-8142-4E59-B90D-8A8DF8907304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6F67D6-8142-4E59-B90D-8A8DF8907304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7923965-12A9-46C7-A740-6EE8E7681046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7923965-12A9-46C7-A740-6EE8E7681046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7923965-12A9-46C7-A740-6EE8E7681046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7923965-12A9-46C7-A740-6EE8E7681046}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{309FA9FC-5F61-4649-9DA3-F30D1AA5266D} = {C53669F8-DAF4-47A9-9AEC-B55B955EF0A3}
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212} = {C53669F8-DAF4-47A9-9AEC-B55B955EF0A3}
+		{C7923965-12A9-46C7-A740-6EE8E7681046} = {1FEA2E45-F879-4E03-BA22-CC26912B41D8}
+		{7A6F67D6-8142-4E59-B90D-8A8DF8907304} = {C3B7E078-CEE4-4191-B56C-0D698DAFD860}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = bit.shared.numerics.csproj
+	EndGlobalSection
+EndGlobal

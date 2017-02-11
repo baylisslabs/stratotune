@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E748613-6E58-497C-93B0-0BE5F31077C5}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>bit.projects.iphone.chromatictuner</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>bitprojectsiphonechromatictuner</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer: Chris Bayliss (6FL9E63P7J)</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CodesignProvision>BE1DDDE6-6BE2-4DD2-B75F-DCED965CAEC8</CodesignProvision>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchExtraArgs>-gcc_flags "-framework Accelerate"</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchExtraArgs>-gcc_flags "-framework Accelerate"</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution: Bayliss IT Pty Ltd (WCEV6GJZ3U)</CodesignKey>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchExtraArgs>-gcc_flags "-framework Accelerate"</MtouchExtraArgs>
+    <CodesignProvision>35FB7FFF-F82F-4798-870C-350A073653DA</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchSdkVersion>6.1</MtouchSdkVersion>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchUseLlvm>True</MtouchUseLlvm>
+    <CodesignProvision>8A9EE316-E9B5-41DC-B182-937C6DF77A25</CodesignProvision>
+    <MtouchExtraArgs>-gcc_flags "-framework Accelerate"</MtouchExtraArgs>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="itunes_description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="View\TunerReadoutView.cs" />
+    <Compile Include="View\ScaleTapeView.cs" />
+    <Compile Include="View\CentsDialView.cs" />
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Controller\SettingsDialogViewController.cs" />
+    <Compile Include="View\PresetsElement.cs" />
+    <Compile Include="View\SettingsDialogElement.cs" />
+    <Compile Include="Controller\SettingsViewControllerDelegate.cs" />
+    <Compile Include="Util\ElementBuilder.cs" />
+    <Compile Include="Util\GeometryExtensions.cs" />
+    <Compile Include="Util\LayerDelegateAdapter.cs" />
+    <Compile Include="Util\LayoutHelper.cs" />
+    <Compile Include="Config\EnvConfig.cs" />
+    <Compile Include="View\AddPresetElement.cs" />
+    <Compile Include="View\A4CalibrationElement.cs" />
+    <Compile Include="Util\TouchRecord.cs" />
+    <Compile Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\SvgObjectData.cs">
+      <Link>Content\Images\SvgObjectData.cs</Link>
+    </Compile>
+    <Compile Include="Controller\bit_projects_iphone_chromatic_tunerViewController.cs" />
+    <Compile Include="View\TiledScaleLayer.cs" />
+    <Compile Include="View\SliderSwitch.cs" />
+    <Compile Include="Util\UrlUtil.cs" />
+    <Compile Include="Util\UIKitExtensions.cs" />
+    <Compile Include="View\StaticGeometry.cs" />
+    <Compile Include="Controller\AppRatingFlow.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\bit.shared.ios.audio\bit.shared.ios.audio-mt.csproj">
+      <Project>{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}</Project>
+      <Name>bit.shared.ios.audio-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.numerics\bit.shared.numerics-mt.csproj">
+      <Project>{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}</Project>
+      <Name>bit.shared.numerics-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.logging\bit.shared.logging-mt.csproj">
+      <Project>{3F6055D8-8C77-441C-8788-97B9CC912E82}</Project>
+      <Name>bit.shared.logging-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.audio\bit.shared.audio-mt.csproj">
+      <Project>{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}</Project>
+      <Name>bit.shared.audio-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.appconfig\bit.shared.appconfig-mt.csproj">
+      <Project>{A4802B35-2918-4A99-8B93-08C12B1DB3DC}</Project>
+      <Name>bit.shared.appconfig-mt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bit.projects.iphone.chromatic-tuner.model\bit.projects.iphone.chromatic-tuner.model.csproj">
+      <Project>{7038C5C9-CB57-4F2A-B79F-AF6E5812066E}</Project>
+      <Name>bit.projects.iphone.chromatic-tuner.model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\bit.shared.ios.msgbus\bit.shared.ios.msgbus-mt.csproj">
+      <Project>{59C250AC-36C4-4093-82A6-29983389B07B}</Project>
+      <Name>bit.shared.ios.msgbus-mt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+    <Folder Include="Config\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Util\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Dba\" />
+    <Folder Include="Content\AppStore\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Dba\SETTINGS_DB_0_CONFIGURE.sql" />
+    <Content Include="..\..\..\third_party\GlyphishPro\icons\icons-gray\19-gear.png">
+      <Link>Content\Images\19-gear.png</Link>
+    </Content>
+    <Content Include="..\..\..\third_party\GlyphishPro\icons\icons-gray\19-gear%402x.png">
+      <Link>Content\Images\19-gear%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\cents_dial.png">
+      <Link>Content\Images\cents_dial.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\cents_dial%402x.png">
+      <Link>Content\Images\cents_dial%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english.png">
+      <Link>Content\Images\scale_tape_english.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english%402x.png">
+      <Link>Content\Images\scale_tape_english%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english_flat.png">
+      <Link>Content\Images\scale_tape_english_flat.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english_flat%402x.png">
+      <Link>Content\Images\scale_tape_english_flat%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english_sharp.png">
+      <Link>Content\Images\scale_tape_english_sharp.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_english_sharp%402x.png">
+      <Link>Content\Images\scale_tape_english_sharp%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_northerneuropean.png">
+      <Link>Content\Images\scale_tape_northerneuropean.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_northerneuropean%402x.png">
+      <Link>Content\Images\scale_tape_northerneuropean%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_solfege_fixeddo.png">
+      <Link>Content\Images\scale_tape_solfege_fixeddo.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\scale_tape_solfege_fixeddo%402x.png">
+      <Link>Content\Images\scale_tape_solfege_fixeddo%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\mode_switch_slider.png">
+      <Link>Content\Images\mode_switch_slider.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\mode_switch_slider%402x.png">
+      <Link>Content\Images\mode_switch_slider%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\notelock_slider.png">
+      <Link>Content\Images\notelock_slider.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\notelock_slider%402x.png">
+      <Link>Content\Images\notelock_slider%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\51-power-glow.png">
+      <Link>Content\Images\51-power-glow.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\51-power-glow%402x.png">
+      <Link>Content\Images\51-power-glow%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\51-power.png">
+      <Link>Content\Images\51-power.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\51-power%402x.png">
+      <Link>Content\Images\51-power%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\120-headphones-glow.png">
+      <Link>Content\Images\120-headphones-glow.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\120-headphones-glow%402x.png">
+      <Link>Content\Images\120-headphones-glow%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\120-headphones.png">
+      <Link>Content\Images\120-headphones.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\120-headphones%402x.png">
+      <Link>Content\Images\120-headphones%402x.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\panel_for_view.png">
+      <Link>Content\Images\panel_for_view.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\panel_for_view%402x.png">
+      <Link>Content\Images\panel_for_view%402x.png</Link>
+    </Content>
+    <Content Include="Content\AppStore\app_icon.png" />
+    <Content Include="Content\AppStore\app_icon%402x.png" />
+    <Content Include="Content\AppStore\app_icon_ipad.png" />
+    <Content Include="Content\AppStore\app_icon_ipad%402x.png" />
+    <Content Include="Content\AppStore\spotlight_icon.png" />
+    <Content Include="Content\AppStore\spotlight_icon%402x.png" />
+    <Content Include="Content\AppStore\spotlight_icon_ipad.png" />
+    <Content Include="Content\AppStore\spotlight_icon_ipad%402x.png" />
+    <Content Include="Default.png" />
+    <Content Include="Default%402x.png" />
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\panel_for_view_568h.png">
+      <Link>Content\Images\panel_for_view_568h.png</Link>
+    </Content>
+    <Content Include="..\..\..\data\bit.projects.iphone.chromatic-tuner.images\generated\panel_for_view_568h%402x.png">
+      <Link>Content\Images\panel_for_view_568h%402x.png</Link>
+    </Content>
+    <Content Include="Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>

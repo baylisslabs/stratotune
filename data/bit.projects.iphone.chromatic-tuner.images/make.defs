@@ -1,0 +1,16 @@
+
+# targets
+OUTPUT_PATH=generated
+TARGETS=$(addprefix $(OUTPUT_PATH)/,$(PY_SOURCES:%.py=%.png) $(SVG_SOURCES:%.svg=%.png))
+TARGETS_2X=$(addprefix $(OUTPUT_PATH)/,$(PY_SOURCES:%.py=%@2x.png) $(SVG_SOURCES:%.svg=%@2x.png))
+SVG_OBJECT_DATA_CS=$(OUTPUT_PATH)/SvgObjectData.cs
+ALL_TARGETS= $(SVG_OBJECT_DATA_CS) $(TARGETS) $(TARGETS_2X)
+
+# paths
+#INSTALL_DIR=images
+SHELL=/bin/sh
+REPLACE_TOKEN_PY=./replace_token.py
+
+
+
+

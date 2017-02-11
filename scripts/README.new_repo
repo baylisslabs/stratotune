@@ -1,0 +1,6 @@
+Todo: script this
+make the repo base folder
+cd to folder
+hg init
+copy the appropriate .hgignore from scripts/default.hgignore...
+add and commit

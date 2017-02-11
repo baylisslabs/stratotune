@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"      
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="320" height="460">
+           
+    <image x="10" y="50" width="300" height="140" xlink:href="generated/cents_dial_tint.png"/> 
+    <image x="10" y="240" width="300" height="75" xlink:href="generated/scale_tape_tint.png"/> 
+       
+    <image width="100%" height="100%" xlink:href="generated/panel_with_cutouts.png"/>
+       
+    <g style="fill:none; stroke-width:3; stroke: #444444;">
+        <path d="M 30,395 l 0,-10 a 5,5 0,0,1 5,-5 l 90,0 m 70,0 l 87,0 a 5,5 0,0,1 5,5 l 0,10" />             
+        <circle cx="160" cy="393" r="2" style="fill:#444444"/>     
+    </g>
+
+    <image id="notelock_btn_l" x="0" y="0" width="26" height="26" 
+        transform="translate(194,328) scale(0.66)" 
+        xlink:href="../../third_party/GlyphishPro/icons/icons-gray/54-lock.png"/>          
+       
+    <image id="pitchpipe_btn" x="20" y="400" width="26" height="26" xlink:href="../../third_party/GlyphishPro/icons/icons-gray/264-sound-on.png"/>   
+    <text x="160" y="386" style="stroke: none; fill: #444444; font-family: helvetica; font-weight: bold; font-size: 15pt; text-anchor:middle">AUTO</text>
+    <image id="tuning_btn" x="274" y="400" width="26" height="26" xlink:href="../../third_party/GlyphishPro/icons/icons-gray/66-microphone.png"/>
+    
+    <text x="160" y="30" style="text-anchor: middle; font-family: Italianno; font-size: 22pt; fill: #000000; stroke: none;">
+    Stratotune      
+    </text>   
+</svg>

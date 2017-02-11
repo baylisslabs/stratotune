@@ -1,0 +1,30 @@
+.DELETE_ON_ERROR:
+
+all: $(ALL_TARGETS)
+
+clean:
+	rm -f  $(ALL_TARGETS)
+
+#install:: 
+#	mkdir -p $(INSTALL_DIR) && cp -f $(ALL_TARGETS) $(INSTALL_DIR)
+
+#remove::
+#	cd $(INSTALL_DIR) && rm -f $(ALL_TARGETS)
+
+
+$(OUTPUT_PATH)/%.png : $(OUTPUT_PATH)/%@2x.png
+	convert $< -resize 50% $@
+
+$(OUTPUT_PATH)/%@2x.png : %.svg
+	./svg_compile_2x.py -c $< -o $@
+
+%.svg : %.py
+	python $< > $@
+ 
+$(SVG_OBJECT_DATA_CS) : $(SVG_SOURCES)
+	rm -f $@
+	xsltproc svg_objects_to_csharp.xslt $^ | $(REPLACE_TOKEN_PY) svg_objects_to_csharp.cs.template '/* @PLACEHOLDER */' > $@
+	gmcs --parse $@
+	chmod -w $@
+
+

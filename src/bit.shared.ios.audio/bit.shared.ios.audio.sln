@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.ios.audio-mt", "bit.shared.ios.audio-mt.csproj", "{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.audio-mt", "..\bit.shared.audio\bit.shared.audio-mt.csproj", "{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bit.shared.numerics-mt", "..\bit.shared.numerics\bit.shared.numerics-mt.csproj", "{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ABE78A-6A9F-42BB-B26D-DD652C5815BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76EB6D1-4AEA-43E6-AB39-B0D7C3F38212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0001DA0-80DE-4077-8C01-1A2017FFE0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = bit.shared.ios.audio-mt.csproj
+	EndGlobalSection
+EndGlobal

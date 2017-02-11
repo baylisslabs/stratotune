@@ -1,0 +1,22 @@
+[ui]
+username = Chris Bayliss <chris@bayliss-it.com.au>
+[extensions]
+hgext.bookmarks =
+git = 
+rebase = 
+[alias]
+mlist = !ssh hg@hurricane find . -name '.hg' -a -type d -prune | sed 's/\/\.hg$//' | sed 's/^\.\///'
+list = !find . -name '.hg' -a -type d -prune | sed 's/\/\.hg$//' | sed 's/^\.\///'
+mclone = clone ssh://hg@hurricane/$1 $1
+cn = commit -m "no comment"
+rstat = !hg list | while read line; do hg stat $line; done;
+rbranches = !hg list | while read line; do hg branches $line; done;
+rbranch = !hg list | while read line; do hg branch $line; done;
+rpush = !hg list | while read line; do (cd $line && hg push); done;
+rpull = !hg list | while read line; do (cd $line && hg pull); done;
+radd = !hg list | while read line; do (cd $line && hg add); done;
+rcn = !hg list | while read line; do (cd $line && hg cn); done;
+rupdate = !hg list | while read line; do (cd $line && hg update); done;
+rin = !hg list | while read line; do (cd $line && hg in); done;
+rout = !hg list | while read line; do (cd $line && hg out); done;
+rtag = !hg list | while read line; do (cd $line && hg tag $1); done;

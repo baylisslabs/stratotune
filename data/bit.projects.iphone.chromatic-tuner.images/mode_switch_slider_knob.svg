@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events" 
+     xmlns:im="http://www.bayliss-it.com.au/2012/imageproc"
+     width="28" height="28">
+           
+    <im:convert>
+        (
+            +clone -shade 135x45 -blur 0x1 -normalize
+            ( +clone -colorspace 'Gray' -fx 'cos(pi*(i/w-.5))' +level-colors black,gray(50%) )
+            -compose Plus -composite
+            -gravity center generated/radial_brushed_metal.png
+            -compose Multiply -composite
+            -gravity center generated/radial_spoked_shine.png
+            -compose Multiply -composite
+        )
+        -swap 0,1 +matte -compose CopyOpacity -composite           
+    </im:convert>
+       
+    <rect x="0" y="0" width="100%" height="100%" style="fill:black"/>  
+    <circle cx="14" cy="14" r="13" style="stroke: none; fill: white;"/>
+    
+</svg>
