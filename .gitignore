@@ -39,3 +39,4 @@ _ReSharper*/
 *.pyc
 packages/
 *.orig
+*.swp
